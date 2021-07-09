@@ -1,0 +1,18 @@
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::before {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+body {
+    background-color: #000;
+}
+
+/* /Common */
