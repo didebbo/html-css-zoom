@@ -84,7 +84,7 @@ header .row .col-right .view p {
 
 /* ANCHOR Main */
 main {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 100px);
     /* background-color: burlywood; */
 }
 
@@ -175,3 +175,27 @@ main .row .right p {
 /* /Left & Right */
 
 /* /Main */
+
+/* ANCHOR Footer */
+footer {
+    height: 50px;
+    color: #fff;
+}
+
+footer .row {
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    background-color: #222426;
+}
+
+/* ANCHOR Left */
+footer .row .left .button {
+    flex-wrap: wrap;
+    margin: 0 10px;
+    align-items: center;
+    color: #AAABAC;
+}
+/* /Left */
+
+/* /Footer */
