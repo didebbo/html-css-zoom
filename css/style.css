@@ -1,18 +1,78 @@
-/* Common */
+/* ANCHOR Common */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ANCHOR Clearfix */
 .clearfix::before {
     display: table;
     content: "";
     clear: both;
 }
+/* /Clearfix */
+
+/* ANCHOR Display */
+.dy-flex {
+    display: flex;
+}
+/* /Display */
 
 body {
-    background-color: #000;
+    background-color: #1A1A1A;
 }
 
 /* /Common */
+
+/* ANCHOR Header */
+
+header {
+    height: 50px;
+}
+
+header .row {
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .row .col-left,
+header .row .col-right {
+    align-items: center;
+    color: #fff;
+}
+
+/* ANCHOR Header Col-Left */
+header .row .col-left .shield,
+header .row .col-left .recording,
+header .row .col-right .view {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: #111212;
+}
+
+header .row .col-left .shield i {
+    color: #23D959;
+}
+
+header .row .col-left .recording i,
+header .row .col-left .recording p {
+    margin: 0 5px;
+}
+
+header .row .col-left .recording i {
+    color: red;
+}
+/* /Header Col-Left */
+
+/* ANCHOR Col-Right*/
+
+header .row .col-right .view i,
+header .row .col-right .view p {
+    margin: 0 5px;
+}
+/* /Col-Right */
+
+/* /Header */
