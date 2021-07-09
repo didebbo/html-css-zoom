@@ -184,18 +184,26 @@ footer {
 
 footer .row {
     height: 100%;
+    /* width: 90%; */
+    padding: 0 20px;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
     background-color: #222426;
 }
 
 /* ANCHOR Left */
-footer .row .left .button {
+footer .row .left .button,
+footer .row .center .button {
     flex-wrap: wrap;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     align-items: center;
     color: #AAABAC;
 }
+
+footer .row .left .button .icon i {
+    /* margin: 0 5px; */
+}
+
 /* /Left */
 
 /* /Footer */
