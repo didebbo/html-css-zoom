@@ -19,10 +19,18 @@
 }
 /* /Display */
 
-/* ANCHOR Display-Direction */
+/* ANCHOR Flex-Direction */
 .dy-flex-col {
    flex-direction: column; 
 }
+/* /Flex-Direction */
+
+/* ANCHOR Position */
+.pn-relative {
+    position: relative;
+}
+/* /Position */
+
 
 body {
     background-color: #1A1A1A;
@@ -102,13 +110,13 @@ main .row .center {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 main .row .center .user {
     position: relative;
     width: calc((100% / 5) - 10px * 2);
-    height: calc((100% / 2) - 10px * 2);
+    height: calc((100% / 3) - 10px * 2);
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
@@ -119,7 +127,7 @@ main .row .center .user .cam {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* object-position: center; */
+    object-position: center;
 }
 
 main .row .center .user .info {
@@ -130,6 +138,7 @@ main .row .center .user .info {
     border-radius: 5px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8em;
 }
 
 main .row .center .user .info i {
@@ -184,26 +193,50 @@ footer {
 
 footer .row {
     height: 100%;
-    /* width: 90%; */
-    padding: 0 20px;
+    padding: 0 10px;
     align-items: center;
     justify-content: space-between;
     background-color: #222426;
-}
+    /* background-color: blue; */
+} 
 
-/* ANCHOR Left */
 footer .row .left .button,
+footer .row .right .button,
 footer .row .center .button {
     flex-wrap: wrap;
-    /* margin: 0 10px; */
+    margin: 0 10px;
+    
     align-items: center;
     color: #AAABAC;
+    font-size: 0.8em;
 }
 
-footer .row .left .button .icon i {
-    /* margin: 0 5px; */
+footer .row .right .button {
+    background-color: #E02828;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
 
-/* /Left */
+footer .row .left .button .icon i,
+footer .row .right .button .icon i,
+footer .row .center .button .icon i {
+    margin: 0 5px;
+}
+
+footer .row .center .button .icon .fa-user-friends::after {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    content: "34";
+    font-size: 0.6em;
+}
+
+/* ANCHOR Colors */
+footer .row .center .txt-color-green {
+    color: #23D959;
+    /* border: 1px solid red; */
+}
+/* /Colors */
 
 /* /Footer */
