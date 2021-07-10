@@ -1,8 +1,11 @@
 /* ANCHOR Common */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* ANCHOR Clearfix */
@@ -107,14 +110,22 @@ main .row {
 }
 
 /* ANCHOR Center */
+
+
 main .row .center {
-    /* background-color: red; */
     width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main .row .center #page1,
+main .row .center #page2 {
+    /* background-color: red; */
+    width: 100%;
     height: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     align-content: center;
 }
 
@@ -171,8 +182,12 @@ main .row .center .user.talking .info i {
 /* /Center */
 
 /* ANCHOR Left & Right */
-main .row .left,
-main .row .right {
+
+main .row a {
+    text-decoration: none;
+}
+main .row a .left,
+main .row a .right {
     cursor: pointer;
     margin: 10px;
     padding: 5px;
@@ -181,15 +196,15 @@ main .row .right {
     background-image: linear-gradient(#212121, #050505);
 }
 
-main .row .left i,
-main .row .right i {
+main .row a .left i,
+main .row a .right i {
     margin: 10px;
     color: #2DBAFF;
     font-size: 1.5em;
 }
 
-main .row .left p,
-main .row .right p {
+main .row a .left p,
+main .row a .right p {
     font-size: 0.8em;
     color: #7E7E7E;
 }
