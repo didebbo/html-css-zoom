@@ -34,6 +34,7 @@
 
 body {
     background-color: #1A1A1A;
+    cursor: default;
 }
 
 /* /Common */
@@ -81,10 +82,13 @@ header .row .col-left .recording i {
 /* /Header Col-Left */
 
 /* ANCHOR Col-Right*/
-
+header .row .col-right .view {
+    /* background-color: rebeccapurple; */
+}
 header .row .col-right .view i,
 header .row .col-right .view p {
     margin: 0 5px;
+    cursor: pointer;
 }
 /* /Col-Right */
 
@@ -111,6 +115,7 @@ main .row .center {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    align-content: center;
 }
 
 main .row .center .user {
@@ -122,11 +127,11 @@ main .row .center .user {
     margin: 10px;
 }
 
-main .row .center .user .cam {
+main .row .center .user .cam{
     background-color: #000;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     object-position: center;
 }
 
@@ -142,6 +147,7 @@ main .row .center .user .info {
 }
 
 main .row .center .user .info i {
+    cursor: pointer;
     margin: 0 2px;
 }
 
@@ -162,6 +168,7 @@ main .row .center .user .info .fa-microphone {
 /* ANCHOR Left & Right */
 main .row .left,
 main .row .right {
+    cursor: pointer;
     margin: 10px;
     padding: 5px;
     align-items: center;
@@ -193,22 +200,37 @@ footer {
 
 footer .row {
     height: 100%;
-    padding: 0 10px;
-    align-items: center;
     justify-content: space-between;
     background-color: #222426;
-    /* background-color: blue; */
-} 
+}
+
+footer .row .left,
+footer .row .right,
+footer .row .center {
+    /* border: 2px solid tomato; */
+}
+
+footer .row .left {
+    width: 10%;
+}
+
+footer .row .center {
+    width: 50%;
+}
+
+footer .row .right {
+    width: calc(10% + 20px * 2);
+}
 
 footer .row .left .button,
 footer .row .right .button,
 footer .row .center .button {
     flex-wrap: wrap;
-    margin: 0 10px;
-    
     align-items: center;
+    margin: auto;
     color: #AAABAC;
     font-size: 0.8em;
+    cursor: pointer;
 }
 
 footer .row .right .button {
