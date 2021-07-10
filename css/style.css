@@ -57,6 +57,7 @@ header .row .col-left,
 header .row .col-right {
     align-items: center;
     color: #fff;
+    /* font-size: 1.1em; */
 }
 
 /* ANCHOR Header Col-Left */
@@ -200,7 +201,7 @@ main .row a .left i,
 main .row a .right i {
     margin: 10px;
     color: #2DBAFF;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 main .row a .left p,
@@ -231,11 +232,11 @@ footer .row .center {
 }
 
 footer .row .left {
-    width: 10%;
+    width: calc(10% + 20px * 2);
 }
 
 footer .row .center {
-    width: 50%;
+    width: calc(50% + 20px * 2);
 }
 
 footer .row .right {
