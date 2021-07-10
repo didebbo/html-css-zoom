@@ -155,11 +155,16 @@ main .row .center .user .info span {
     margin: 0 2px;
 }
 
-main .row .center .user .info .fa-microphone-slash {
+
+main .row .center .user.talking {
+    border: 4px solid yellow;
+}
+
+main .row .center .user .info i {
     color: red;
 }
 
-main .row .center .user .info .fa-microphone {
+main .row .center .user.talking .info i {
     color: greenyellow;
 }
 
