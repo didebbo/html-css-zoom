@@ -1,11 +1,9 @@
 /* ANCHOR Common */
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 /* ANCHOR Clearfix */
@@ -39,7 +37,6 @@ body {
     background-color: #1A1A1A;
     cursor: default;
 }
-
 /* /Common */
 
 /* ANCHOR Header */
@@ -60,7 +57,6 @@ header .row .col-right {
     /* font-size: 1.1em; */
 }
 
-/* ANCHOR Header Col-Left */
 header .row .col-left .shield,
 header .row .col-left .recording,
 header .row .col-right .view {
@@ -83,19 +79,12 @@ header .row .col-left .recording p {
 header .row .col-left .recording i {
     color: red;
 }
-/* /Header Col-Left */
 
-/* ANCHOR Col-Right*/
-header .row .col-right .view {
-    /* background-color: rebeccapurple; */
-}
 header .row .col-right .view i,
 header .row .col-right .view p {
     margin: 0 5px;
     cursor: pointer;
 }
-/* /Col-Right */
-
 /* /Header */
 
 /* ANCHOR Main */
@@ -111,8 +100,6 @@ main .row {
 }
 
 /* ANCHOR Center */
-
-
 main .row .center {
     width: 80%;
     height: 100%;
@@ -122,6 +109,7 @@ main .row .center {
 main .row .center #page1,
 main .row .center #page2 {
     /* background-color: red; */
+    flex-shrink: 0;
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
@@ -179,11 +167,9 @@ main .row .center .user .info i {
 main .row .center .user.talking .info i {
     color: greenyellow;
 }
-
 /* /Center */
 
 /* ANCHOR Left & Right */
-
 main .row a {
     text-decoration: none;
 }
@@ -210,7 +196,6 @@ main .row a .right p {
     color: #7E7E7E;
 }
 /* /Left & Right */
-
 /* /Main */
 
 /* ANCHOR Footer */
@@ -223,12 +208,6 @@ footer .row {
     height: 100%;
     justify-content: space-between;
     background-color: #222426;
-}
-
-footer .row .left,
-footer .row .right,
-footer .row .center {
-    /* border: 2px solid tomato; */
 }
 
 footer .row .left {
@@ -275,11 +254,7 @@ footer .row .center .button .icon .fa-user-friends::after {
     font-size: 0.6em;
 }
 
-/* ANCHOR Colors */
 footer .row .center .txt-color-green {
     color: #23D959;
-    /* border: 1px solid red; */
 }
-/* /Colors */
-
 /* /Footer */
